@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="sv">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viweport" content="with=divice-width,initial-scale=1.0" >
+    <title>English - Hjälvik Strandkiosk</title>
+    <link rel="stylesheet" href="main.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lily+Script+One">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" >
+</head>
+
+        
+    <!------------Header & NavBar----------->
+    <body>
+        <div class="header">
+            <nav>
+                <a href="index.html"><img src="../img/logo.jpg" alt="Hjälvik Strandkiosks logga"></a>
+                <div class="nav-links" id="navLinks">
+                    <img class="nav-img " src="../img/close-button.png " onclick="hideMenu()" alt="close-button">
+                    <ul>
+                        <li><a href="index.html">STARTSIDA</a></li>
+                        <li><a href="produkter.html">PRODUKTER</a></li>
+                        <li><a href="om-oss.html">OM OSS</a></li>
+                        <li><a href="english.html">ENGLISH</a></li>
+                        <li><a href="https://www.instagram.com/hjalvik_strandkiosk/" target="_blank"><img class="instagram"
+                                src="../img/Instagram.png" alt="Instagrams logga"></a></li>
+                    </ul>
+                </div>
+                <img class="nav-img " src="../img/hamburger-button.png " onclick="showMenu()" alt="hamburger-button">
+            </nav>
+        </div>
+    
+        
+    <!-------------English----------->
+    <section class="english">
+        <h1>A delightful shop on the west coast where everyone is welcome!</h1>
+        <h4>
+            Opening hours
+        </h4>
+            <p>24 july - 14 august <br>11.00 - 16.00<br>With reservation for bad weather.</p>
+        <h4>
+            About us
+        </h4>
+        <p>The shop offers ice cream, drinks, sweets, simple food and crab fishing supplies.</p>
+        <h4>
+            About Hjälvik
+        </h4>
+            <p>The beach offers beach volleyball fiels, parking close by, toilets and a beach shower. The beach is accessible and the shop has a first aid-kit if something were to happen.</p>
+        <h4>
+            Find your way here:
+        </h4>
+        <div id="map"></div>
+            <script>
+                function initMap() {
+                    const kiosken = { lat: 57.71843576514784, lng: 11.634569679503263 };
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 15,
+                        center: kiosken,
+                    });
+                    const marker = new google.maps.Marker({
+                        position: kiosken,
+                        map: map,
+                    });
+                }
+        </script>
+        <script
+                async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBB2Kzk3ggtebwEmAqOH3WiIo5-RKNcY&callback=initMap&v=weekly"
+                type="text/javascript"
+        ></script>
+    </section>
+    
+    
+    <!-------------Footer----------->
+    <section class="footer">
+        <div class="text-box">
+            <div class="adress">
+                <h4>VISITING ADRESS</h4>
+                    <p>Hjälvik Badstrand<br>475 Öckerö</p>
+            </div>
+            <div>
+                <img src="../img/logo.jpg" alt="Hjälvik Strandkiosks logga">
+            </div>
+            <div class="tid">
+                <h4>OPENING HOURS</h4>
+                    <p>24 July - 14 August<br>11.00 - 16.00</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------JavaScript for Toggle Menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="with=divice-width,initial-scale=1.0">
+    <title>Produkter - Hjälvik Strandkiosk</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lily+Script+One">
+</head>
+
+
+<!------------Header & NavBar----------->
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="../img/logo.jpg" alt="Hjälvik Strandkiosks logga"></a>
+            <div class="nav-links" id="navLinks">
+                <img class="nav-img " src="../img/close-button.png " onclick="hideMenu()" alt="close-button">
+                <ul>
+                    <li><a href="index.html">STARTSIDA</a></li>
+                    <li><a href="produkter.html">PRODUKTER</a></li>
+                    <li><a href="om-oss.html">OM OSS</a></li>
+                    <li><a href="english.html">ENGLISH</a></li>
+                    <li><a href="https://www.instagram.com/hjalvik_strandkiosk/" target="_blank"><img class="instagram"
+                            src="../img/Instagram.png" alt="Instagrams logga"></a></li>
+                </ul>
+            </div>
+            <img class="nav-img " src="../img/hamburger-button.png " onclick="showMenu()" alt="hamburger-button">
+        </nav>
+    </div>
+
+
+
+    <!-------------Produkter----------->
+    <section class="produkt">
+        <h1>
+            Produkter
+        </h1>
+        <img src="../img/meny.png" alt="Lista med vad som erbjuds i kiosken">
+        <p>Reservation för slutsäljning.<br>Vi är en kontantfri kiosk, men vi tar både kort och swish.</p>
+    </section>
+
+
+    <!-------------Footer----------->
+    <section class="footer">
+        <div class="text-box">
+            <div class="adress">
+                <h4>BESÖKSADRESS</h4>
+                <p>Hjälvik Badstrand<br>475 Öckerö</p>
+            </div>
+            <div>
+                <img src="../img/logo.jpg" alt="Hjälvik Strandkiosks logga">
+            </div>
+            <div class="tid">
+                <h4>ÖPPETTIDER</h4>
+                <p>24 Juni - 14 Augusti<br>11.00 - 16.00</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------JavaScript for Toggle Menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
