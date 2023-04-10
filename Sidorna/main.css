@@ -95,20 +95,11 @@ nav img {
 
 
 /*------------index-----------*/
-.startsida h1 {
+.content h1 {
     text-align: center;
     text-size-adjust: 100%;
     margin-bottom: 2%;
-    color: #3B3B3E;
-    font-size: 50px;
-    text-decoration: none;
-    list-style: none;
-}
-
-.startsida h4 {
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 2% 20% 0% 20%;
+    margin-top: 2%;
     color: #3B3B3E;
     font-family: "Lily Script One";
     font-size: 40px;
@@ -116,20 +107,34 @@ nav img {
     list-style: none;
 }
 
-.startsida p {
+.content h2 {
+    margin-bottom: 2%;
+}
+
+.content h4 {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 2% 20% 0% 20%;
+    color: #3B3B3E;
+    font-family: "Lily Script One";
+    font-size: 32px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.content p {
     text-align: center;
     text-size-adjust: 50%;
     margin: 0% 20% 2% 20%;
     color: #3B3B3E;
     font-family: Jost;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     list-style: none;
 }
 
-.startsida img {
+.content img {
     width: 100%;
-
     /*height: 0%;
     margin-left: auto;
     justify-self: center;
@@ -138,85 +143,11 @@ nav img {
     border-radius: 10px;*/
 }
 
-
-
-/*------------Produkter-----------*/
-.produkt h1 {
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 2% 20% 0% 20%;
-    color: #3B3B3E;
-    font-family: "Lily Script One";
-    font-size: 50px;
-}
-
-.produkt img {
+.produkter img {
     width: 45%;
     margin-left: 25%;
     padding: 2%;
     justify-self: center;
-}
-
-.produkt p {
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 0% 20% 2% 20%;
-    color: #3B3B3E;
-    font-family: Jost;
-    font-size: 18px;
-}
-
-
-
-/*------------Om oss-----------*/
-.om h4 {
-    padding: 15px;
-    ;
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 2% 20% 0% 20%;
-    color: #3B3B3E;
-    font-family: "Lily Script One";
-    font-size: 25px;
-}
-
-.om p {
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 0% 20% 2% 20%;
-    color: #3B3B3E;
-    font-family: Jost;
-    font-size: 18px;
-}
-
-
-
-/*------------English-----------*/
-.english h1 {
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 2%;
-    color: #3B3B3E;
-    font-family: "Lily Script One";
-    font-size: 35px;
-}
-
-.english h4 {
-    text-align: center;
-    text-size-adjust: 100%;
-    color: #3B3B3E;
-    font-family: "Lily Script One";
-    font-size: 25px;
-}
-
-.english p {
-    text-align: center;
-    text-size-adjust: 100%;
-    margin: 2% 20% 2% 20%;
-    margin-top: 0%;
-    color: #3B3B3E;
-    font-family: Jost;
-    font-size: 18px;
 }
 
 
@@ -235,7 +166,7 @@ nav img {
     width: 100%;
     background-color: #FCE878;
     bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .footer h4 {
@@ -250,7 +181,7 @@ nav img {
     color: #3B3B3E;
     text-align: center;
     font-family: Jost;
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .footer img {
@@ -259,7 +190,6 @@ nav img {
 
 
 /*------------Mobil-Nav-------------*/
-
 @media(max-width: 950px) {
     .text-box {
         font-size: 18px;
@@ -272,7 +202,6 @@ nav img {
         left: 1px;
         font-size: 2rem;
         padding: 5px;
-
     }
 
     .logo {
@@ -361,8 +290,6 @@ nav img {
         font-weight: 500;
     }
 
-
-
     .navbar-container input[type="checkbox"]:checked~.menu-items {
         transform: translateX(0);
     }
@@ -385,9 +312,11 @@ nav img {
     width: 50px;
 }
 
+
+
 /*----------Mobile Produkter-----------*/
 @media(max-width: 768px) {
-    .produkt img {
+    .produkter img {
         width: 100%;
         padding: 0%;
         margin-left: 0;
@@ -401,3 +330,88 @@ nav img {
         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
 }
+
+
+
+
+
+
+
+/*------------Produkter-----------*
+.produkt h1 {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 2% 20% 0% 20%;
+    color: #3B3B3E;
+    font-family: "Lily Script One";
+    font-size: 50px;
+}
+
+.content produkter img {
+    width: 45%;
+    margin-left: 25%;
+    padding: 2%;
+    justify-self: center;
+}
+
+.produkt p {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 0% 20% 2% 20%;
+    color: #3B3B3E;
+    font-family: Jost;
+    font-size: 18px;
+}
+*/
+
+
+/*------------Om oss-----------*
+.om h4 {
+    padding: 15px;
+    ;
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 2% 20% 0% 20%;
+    color: #3B3B3E;
+    font-family: "Lily Script One";
+    font-size: 25px;
+}
+
+.om p {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 0% 20% 2% 20%;
+    color: #3B3B3E;
+    font-family: Jost;
+    font-size: 18px;
+}*/
+
+
+
+/*------------English-----------*
+.english h1 {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 2%;
+    color: #3B3B3E;
+    font-family: "Lily Script One";
+    font-size: 35px;
+}
+
+.english h4 {
+    text-align: center;
+    text-size-adjust: 100%;
+    color: #3B3B3E;
+    font-family: "Lily Script One";
+    font-size: 25px;
+}
+
+.english p {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 2% 20% 2% 20%;
+    margin-top: 0%;
+    color: #3B3B3E;
+    font-family: Jost;
+    font-size: 18px;
+}*/
