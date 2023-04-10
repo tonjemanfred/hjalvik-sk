@@ -13,24 +13,33 @@
 
 
 <!------------Header & NavBar----------->
+
 <body>
-    <div class="header">
-        <nav>
-            <a href="index.html"><img src="../img/logo.jpg" alt="Hjälvik Strandkiosks logga"></a>
-            <div class="nav-links" id="navLinks">
-                <img class="nav-img " src="../img/close-button.png " onclick="hideMenu()" alt="close-button">
-                <ul>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <a class="logo" href="index.html"><img src="../img/logo.jpg" alt="Hjälvik Strandkiosks logga"></a>
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
                     <li><a href="index.html">STARTSIDA</a></li>
                     <li><a href="produkter.html">PRODUKTER</a></li>
                     <li><a href="om-oss.html">OM OSS</a></li>
                     <li><a href="english.html">ENGLISH</a></li>
                     <li><a href="https://www.instagram.com/hjalvik_strandkiosk/" target="_blank"><img class="instagram"
-                            src="../img/Instagram.png" alt="Instagrams logga"></a></li>
+                                src="../img/Instagram.png" alt="Instagrams logga"></a></li>
                 </ul>
+
             </div>
-            <img class="nav-img " src="../img/hamburger-button.png " onclick="showMenu()" alt="hamburger-button">
         </nav>
-    </div>
+        <div>
+
+        </div>
+    </header>
 
 
     <!-------------Startsida--------- -->
@@ -71,14 +80,26 @@
     <!-----------JavaScript for Toggle Menu---------->
     <script>
         var navLinks = document.getElementById("navLinks");
+        var menu = document.getElementById("menu");
+        var d = document.getElementById("div1");
+        const sidebarIsOpen = () => navLinks.classList.contains("sidebar-open");
+
         function showMenu() {
-            navLinks.style.right = "0";
-        }
+            navLinks.style.display = "block"
+            navLinks.className = navLinks.className + " sidebar-open";
+
+        };
 
         function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
+            navLinks.className = "";
+
+        };
+
+        function toggleMenu() {
+            sidebarIsOpen() ? hideMenu() : showMenu();
+        };
     </script>
-    
+
 </body>
+
 </html>
