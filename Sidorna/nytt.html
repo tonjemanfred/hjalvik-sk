@@ -109,22 +109,8 @@
             Hitta hit
         </h4>
         <div id="map"></div>
-        <script>
-            function initMap() {
-                const kiosken = { lat: 57.71843576514784, lng: 11.634569679503263 };
-                const map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 15,
-                    center: kiosken,
-                });
-                const marker = new google.maps.Marker({
-                    position: kiosken,
-                    map: map,
-                });
-            }
-        </script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBB2Kzk3ggtebwEmAqOH3WiIo5-RKNcY&callback=initMap"
-            type="text/javascript"></script>
+        <!-- Här ligger script för karta-->
+        
         <h4>
             Kontakta oss
         </h4>
