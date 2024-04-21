@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lily+Script+One">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="Sidorna/main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 
@@ -25,10 +25,9 @@
                     <span class="line line3"></span>
                 </div>
                 <ul class="menu-items">
-                    <li><a href="index.html">STARTSIDA</a></li>
-                    <li><a href="produkter.html">PRODUKTER</a></li>
-                    <li><a href="om-oss.html">OM OSS</a></li>
-                    <li><a href="english.html">ENGLISH</a></li>
+                    <li><a href="#startsida">STARTSIDA</a></li>
+                    <li><a href="#produkter">PRODUKTER</a></li>
+                    <li><a href="#omoss">OM OSS</a></li>
                     <li><a href="https://www.instagram.com/hjalvik_strandkiosk/" target="_blank"><img class="instagram"
                                 src="/img/Instagram.png" alt="Instagrams logga"></a></li>
                 </ul>
@@ -42,8 +41,8 @@
 
 
     <!-------------Startsida--------- -->
-    <section class="content">
-        <h2>
+    <section id="startsida" class="content">
+        <h2 class="header-img">
             <a><img src="/img/kiosken.jpg" alt="Bild på kiosken"></a>
         </h2>
         <p>
@@ -54,19 +53,24 @@
             Öppettider
         </h4>
         <p>27 juni-14 augusti <br> Alla dagar 11.00-16.00 <br> Med reservation för dåligt väder </p>
-
-
+    </section>
     <!-------------Produkter-----------> 
+    <section id="produkter" class="content">
         <hr > 
 
         <h1>
             Produkter
         </h1>
+        
         <div class="produkter"><img src="/img/meny.png" alt="Lista med vad som erbjuds i kiosken"></div>
         <p>Reservation för slutsäljning.<br>Vi är en kontantfri kiosk, men vi tar både kort och swish.</p>
 
-
+    </section>
     <!-------------Om oss----------->
+    <section id="omoss" class="content">
+        <h1>
+            Om Oss
+        </h1>
         <h4>
             Hjälvik Strandkiosk
         </h4>
@@ -143,6 +147,7 @@
             navLinks.style.right = "-200px";
         }
     </script>
+
 
 </body>
 
