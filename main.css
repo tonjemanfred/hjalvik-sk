@@ -134,6 +134,18 @@ section {
     list-style: none;
 }
 
+.content h5 {
+    text-align: center;
+    text-size-adjust: 100%;
+    margin: 2% 20% 0% 20%;
+    color: #3B3B3E;
+    font-family: "Lily Script One";
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
 .content p {
     text-align: center;
     text-size-adjust: 50%;
