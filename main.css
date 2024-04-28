@@ -167,6 +167,17 @@ section {
     border-radius: 10px;*/
 }
 
+.section-img {
+    height: 30vw;
+    object-fit: cover;
+    overflow: hidden; /* Center the image within the element */
+    object-position: center;
+}
+
+.glassbild {
+    object-position: bottom;
+}
+
 .produkter img {
     width: 45%;
     margin-left: 25%;
